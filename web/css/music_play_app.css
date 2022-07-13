@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600;700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 90vw;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.filter {
+  filter: drop-shadow(4px 4px 4px #f55656);
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-overlay {
+  position: relative;
+  z-index: 1;
+}
+.bg-overlay::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+#success_fail_info {
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.mfp-iframe-holder .mfp-close {
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #f55656;
+  text-align: center;
+  right: 0;
+  padding-right: 0;
+  line-height: 32px;
+}
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width:767px) {
+  html {
+    font-size: 50%;
+  }
+}
+/* :: 1.0 Reboot CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #232323;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+a,
+a:active,
+a:focus,
+a:hover {
+  color: #232323;
+  text-decoration: none;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  line-height: 1.9;
+  color: #666666;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+#header .header__container {
+  height: 90px;
+  width: 100%;
+}
+#header .header__logo img {
+  width: 140px;
+  margin-top: 5px;
+}
+#header .header__content {
+  padding: 0 30px;
+  z-index: 1;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  align-content: center;
+  height: inherit;
+}
+#header .header__search {
+  margin-right: 2rem;
+}
+@media only screen and (min-width:768px) and (max-width:1199px) {
+  #header .header__search {
+    margin-right: 0;
+  }
+}
+#header .header__search form {
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+#header .header__search form input {
+  width: 20rem;
+}
+#header .header__search form button,
+#header .header__search form input {
+  padding: 15px;
+  color: #ffffff;
+  background: none;
+  border: #ebebeb 2px;
+  font-size: 1.4rem;
+  margin-right: 1.5rem;
+  outline: none;
+}
+@media only screen and (min-width:768px) and (max-width:1199px) {
+  #header .header__search form input {
+    width: 30px;
+  }
+}
+#header .header__login {
+  color: #ffffff;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+#header .header__login img {
+  width: 15px;
+}
+#header .header__login > * {
+  margin-right: 20px;
+}
+#header button i:hover,
+#header .header__login span:hover {
+  color: #f55656;
+  cursor: pointer;
+  filter: drop-shadow(4px 4px 4px #f55656);
+}
+
+/*# sourceMappingURL=music_play_app.css.map */

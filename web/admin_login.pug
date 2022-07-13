@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="css/app.css")
+        link(rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.15.1/css/all.css' type='text/css')
+    body
+        .section#admin__login 
+            .login__container 
+                .login__main 
+                    .login__content
+                        .login__header Login to Colorlib
+                        .login__subtittle Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        .login__form
+                            .form_username
+                                label(for="login_username").title 
+                                    span Username: 
+                                input(type="text" name="username" placeholder="Username ...")#login_username.value
+                            .form_username
+                                label(for="login_password").title 
+                                    span Password: 
+                                input(type="password" name="username" placeholder="Password ...")#login_password.value
+                            .form_checkRemember
+                                input(type="checkbox", name="remember" value="On" hidden)#login_checkRemember
+                                label(for="login_checkRemember").title 
+                                    i.fal.fa-check.checkbox-mark
+                                    span Remember me
+                            .form_sumbit 
+                                input(type="submit" value="Login in").btn.btn-submit
+                .login__bg-img.bg-img(style="background-image: url('./img/core-img/login-bg-3.jpg')")

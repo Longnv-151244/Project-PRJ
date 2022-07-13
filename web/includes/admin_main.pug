@@ -1,0 +1,374 @@
+mixin songItem(data)
+  tr
+    td.id= data.id
+    td.name= data.name
+    td.like= data.likes
+        i.fas.fa-heart.icon
+    td.timeUpdate= data.timeUpdate
+    td.view 
+        i.fas.fa-eye.icon
+    td.action 
+        .update 
+            i.fas.fa-comment-alt-edit.icon
+        .delete 
+            i.far.fa-trash-alt.icon
+
+section#admin_main 
+    section.admin__sidebar 
+        .logo 
+            a(href="index.html" class="header-brand")
+                img(src="./img/core-img/logo.png", alt="")
+        .sidebar__main 
+            .sidebar__tab.active 
+                p.sidebar__tab-name 
+                    i.fas.fa-compact-disc.icon
+                    span Nhạc Vpop
+            .sidebar__tab
+                p.sidebar__tab-name 
+                    i.fas.fa-headphones-alt.icon
+                    span Nhạc US-UK
+            .sidebar__tab 
+                p.sidebar__tab-name 
+                    i.fas.fa-boombox.icon
+                    span Nhạc Lofi
+            .sidebar__tab
+                p.sidebar__tab-name
+                    i.fas.fa-history.icon
+                    span History
+            .sidebar__tab
+                p.sidebar__tab-name
+                    i.fas.fa-user-music.icon
+                    span User
+            //- .sidebar__tab
+            //-     p.sidebar__tab-name
+            //-         i.fas.fa-sliders-h.icon
+            //-         span Background  
+    section.admin__container
+        .admin__header
+            .admin__toggle.active
+                    i.fas.fa-bars
+                    span Dashboard
+            .header__search 
+                form(action="" method="post")
+                    input(type="text" name="header-search" placeholder="Search and hit enter...")
+                    button(type="submit" class="btn") 
+                        i.fa.fa-search
+            .header__user 
+                .user 
+                    .user__avatar.bg-img(style="background-image: url('./img/core-img/avatar-default-1.jpg');")
+                    .user__info 
+                        .user__name Van Long
+                        .user__role Admin
+                    i.fas.fa-caret-down.icon
+                    .user__option 
+                        .user__option-content 
+                            .option-item.view-info
+                                .user__avatar.bg-img(style="background-image: url('./img/core-img/avatar-default-1.jpg');")
+                                .user__info 
+                                    .user__name.heading Nguyen Van Long 
+                                    .subtitle See your profile
+                            .option-item.setting
+                                i.fas.fa-cog.icon
+                                .heading Settings 
+                            .option-item.logout
+                                i.fas.fa-sign-out-alt.icon
+                                .heading Log Out
+        .admin__content 
+            #admin__vpop.admin__tab.active
+                .admin__content-overview
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 11
+                            .overview__item-unit Album
+                        .overview__item-icon
+                            i.fas.fa-album
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 11
+                            .overview__item-unit Love
+                        .overview__item-icon
+                            i.fas.fa-heart
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 11
+                            .overview__item-unit User Liked
+                        .overview__item-icon
+                            i.fas.fa-user
+                .admin__content-header 
+                    h1 All playlist
+                    .option
+                        .btn.btn-create Create
+                            i.fas.fa-plus.icon
+                        .sort-select
+                            select
+                                option(value='default') Sort by:
+                                option(value='id') Sort by ID
+                                option(value='a-z') Name: A - Z
+                                option(value='z-a') Name: Z - A
+                                option(value='time') Time Update
+                                option(value='like') Most Like
+                .admin__content-main 
+                    table
+                        thead  
+                            tr
+                                th.id ID
+                                th.name Name
+                                th.like Like
+                                th.timeUpdate Last Update
+                                th.view Display
+                                th.action Action
+                        tbody.scroll-overflow
+                            - const data = {id: 13, name: 'Nothin On You', likes: 36, timeUpdate: "12/03/08 11:23:04"}
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+            #admin__us-uk.admin__tab
+                .admin__content-overview
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 22
+                            .overview__item-unit Album
+                        .overview__item-icon
+                            i.fas.fa-album
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 22
+                            .overview__item-unit Love
+                        .overview__item-icon
+                            i.fas.fa-heart
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 22
+                            .overview__item-unit User Liked
+                        .overview__item-icon
+                            i.fas.fa-user
+                .admin__content-header 
+                    h1 All playlist
+                    .option
+                        .btn.btn-create Create
+                            i.fas.fa-plus.icon
+                        .sort-select
+                            select
+                                option(value='default') Sort by:
+                                option(value='id') Sort by ID
+                                option(value='a-z') Name: A - Z
+                                option(value='z-a') Name: Z - A
+                                option(value='time') Time Update
+                                option(value='like') Most Like
+                .admin__content-main 
+                    table
+                        thead  
+                            tr
+                                th.id ID
+                                th.name Name
+                                th.like Like
+                                th.timeUpdate Last Update
+                                th.view Display
+                                th.action Action
+                        tbody.scroll-overflow
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+            #admin__lofi.admin__tab
+                .admin__content-overview
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 33
+                            .overview__item-unit Album
+                        .overview__item-icon
+                            i.fas.fa-album
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 33
+                            .overview__item-unit Love
+                        .overview__item-icon
+                            i.fas.fa-heart
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 33
+                            .overview__item-unit User Liked
+                        .overview__item-icon
+                            i.fas.fa-user
+                .admin__content-header 
+                    h1 All playlist
+                    .option
+                        .btn.btn-create Create
+                            i.fas.fa-plus.icon
+                        .sort-select
+                            select
+                                option(value='default') Sort by:
+                                option(value='id') Sort by ID
+                                option(value='a-z') Name: A - Z
+                                option(value='z-a') Name: Z - A
+                                option(value='time') Time Update
+                                option(value='like') Most Like
+                .admin__content-main 
+                    table
+                        thead  
+                            tr
+                                th.id ID
+                                th.name Name
+                                th.like Like
+                                th.timeUpdate Last Update
+                                th.view Display
+                                th.action Action
+                        tbody.scroll-overflow
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+                            +songItem(data)
+            #admin__history.admin__tab
+                .admin__content-overview
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 44
+                            .overview__item-unit Create
+                        .overview__item-icon
+                            i.fas.fa-layer-plus
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 44
+                            .overview__item-unit Update
+                        .overview__item-icon
+                            i.fas.fa-comment-alt-edit
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 44
+                            .overview__item-unit Delete
+                        .overview__item-icon
+                            i.fas.fa-trash-alt
+                .admin__content-header 
+                    h1 All playlist
+                    .option
+                        .btn.btn-create Create
+                            i.fas.fa-plus.icon
+                        .sort-select
+                            select
+                                option(value='default') Sort by:
+                                option(value='id') Sort by ID
+                                option(value='a-z') Name: A - Z
+                                option(value='z-a') Name: Z - A
+                                option(value='time') Time Update
+                                option(value='like') Most Like
+                .admin__content-main 
+                    table
+                        thead  
+                            tr
+                                th.id ID
+                                th.name.name_album Album
+                                th.name.name_admin Admin
+                                th.timeUpdate Last Update
+                                th.action Action
+                        tbody.scroll-overflow
+                            tr
+                                td.id 1
+                                td.name.name_album Nothin On You
+                                td.name.name_admin John Doe
+                                td.timeUpdate 12/03/08 11:23:04
+                                td.action 
+                                    .update-view 
+                                        i.fas.fa-comment-alt-edit.icon 
+                            tr
+                                td.id 1
+                                td.name.name_album Nothin On You
+                                td.name.name_admin John Doe
+                                td.timeUpdate 12/03/08 11:23:04
+                                td.action 
+                                    .update-view 
+                                        i.fas.fa-trash-alt.icon
+                            tr
+                                td.id 1
+                                td.name.name_album Nothin On You
+                                td.name.name_admin John Doe
+                                td.timeUpdate 12/03/08 11:23:04
+                                td.action 
+                                    .update-view 
+                                        i.fas.fa-layer-plus.icon    
+            #admin__user.admin__tab
+                .admin__content-overview
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 55
+                            .overview__item-unit Users
+                        .overview__item-icon
+                            i.fas.fa-users
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 55
+                            .overview__item-unit Online
+                        .overview__item-icon
+                            i.fas.fa-toggle-on
+                    .overview__item
+                        .overview__item-info
+                            .overview__item-value 55
+                            .overview__item-unit Offline
+                        .overview__item-icon
+                            i.fas.fa-toggle-off
+                .admin__content-header 
+                    h1 All playlist
+                    .option
+                        .btn.btn-create Create
+                            i.fas.fa-plus.icon
+                        .sort-select
+                            select
+                                option(value='default') Sort by:
+                                option(value='id') Sort by ID
+                                option(value='a-z') Name: A - Z
+                                option(value='z-a') Name: Z - A
+                                option(value='time') Time Update
+                                option(value='like') Most Like
+                .admin__content-main 
+                    table
+                        thead  
+                            tr
+                                th.id ID
+                                th.name Username
+                                th.name Mail
+                                th.timeUpdate Last Online
+                                th.action Action
+                        tbody.scroll-overflow
+                            tr
+                                td.id 1
+                                td.name.user_name user_01
+                                td.name.user_mail user_01@gmail.com
+                                td.timeUpdate 3 minute ago
+                                td.action 
+                                    .update-view 
+                                        i.fas.fa-comment-alt-edit.icon
+                                    .delete-view 
+                                        i.far.fa-trash-alt.icon 
+                            tr
+                                td.id 1
+                                td.name.user_name user_01
+                                td.name.name_mail user_01@gmail.com
+                                td.timeUpdate 3 minute ago
+                                td.action 
+                                    .update-view 
+                                        i.fas.fa-comment-alt-edit.icon
+                                    .delete-view 
+                                        i.far.fa-trash-alt.icon
+                            tr
+                                td.id 1
+                                td.name.user_name user_01
+                                td.name.name_mail user_01@gmail.com
+                                td.timeUpdate 3 minute ago
+                                td.action 
+                                    .update-view 
+                                        i.fas.fa-comment-alt-edit.icon
+                                    .delete-view 
+                                        i.far.fa-trash-alt.icon              
+                    

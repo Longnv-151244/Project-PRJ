@@ -1,0 +1,83 @@
+section#header
+    .header-mobile
+        .mobile-toggle
+            i.far.fa-times.close
+        .header__logo
+            a(href="index.html" class="header-brand")
+                img(src="./img/core-img/logo.png", alt="")
+        .menu-nav 
+            ul.header__nav-moblie
+                li
+                    a(href="./index.html") Home 
+                li
+                    a(href="./vpop.html") Nhạc Việt Nam 
+                li
+                    a(href="./usuk.html") Nhạc Quốc Tế 
+                li
+                    a(href="./lofi.html") Lofi 
+                li.login Đăng nhập
+            .header__search 
+                form(action="" method="post")
+                    input(type="text" name="header-search" placeholder="Search and hit enter...")
+                    button(type="submit" class="btn") 
+                        i.fa.fa-search 
+            ul.header__social 
+                li
+                    a(href="#" class="fab fa-facebook") 
+                li
+                    a(href="#" class="fab fa-twitter") 
+                li
+                    a(href="#" class="fab fa-pinterest") 
+                li
+                    a(href="#" class="fab fa-instagram") 
+                li
+                    a(href="#" class="fab fa-youtube")
+    .header__container.container-fluid
+        .header__content 
+            .header__logo
+                a(href="index.html" class="header-brand")
+                    img(src="./img/core-img/logo.png", alt="")
+            .header__menu 
+                ul.header__nav
+                    li
+                        a(href="./index.html") Home 
+                    li
+                        a(href="./vpop.html") Nhạc Việt Nam 
+                    li
+                        a(href="./usuk.html") Nhạc Quốc Tế 
+                    li
+                        a(href="./lofi.html") Lofi 
+                .header__search 
+                    form(action="" method="post")
+                        input(type="text" name="header-search" placeholder="Search and hit enter...")
+                        button(type="submit" class="btn") 
+                            i.fa.fa-search 
+                ul.header__social 
+                    li
+                        a(href="#" class="fab fa-facebook") 
+                    li
+                        a(href="#" class="fab fa-twitter") 
+                    li
+                        a(href="#" class="fab fa-youtube")
+                    //- li.login Đăng nhập
+                    li
+                        .user 
+                            .user__avatar.bg-img(style="background-image: url('./img/core-img/avatar-default-1.jpg');")
+                            i.fas.fa-caret-down.icon
+                            .user__option 
+                                .user__option-content 
+                                    .option-item.view-info
+                                        .user__avatar.bg-img(style="background-image: url('./img/core-img/avatar-default-1.jpg');")
+                                        .user__info 
+                                            .user__name.heading Nguyen Van Long 
+                                            .subtitle See your profile
+                                    .option-item.setting
+                                        i.fas.fa-cog.icon
+                                        .heading Settings 
+                                    .option-item.logout
+                                        i.fas.fa-sign-out-alt.icon
+                                        .heading Log Out
+            .mobile-toggle
+                i.far.fa-bars.open
+                i.far.fa-times.close   
+        .header__background

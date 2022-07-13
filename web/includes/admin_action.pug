@@ -1,0 +1,164 @@
+section#admin_action.bg-overlay
+    .admin_action-container
+        .admin_action-content.admin_view-container
+            .view_item-img.bg-img(style="background-image: url('./img/song-img/us-uk/on-my-way.jpg');")
+                .control.bg-overlay  
+                    .play.active 
+                        i.fad.fa-play-circle
+                    .pause
+                        i.fas.fa-pause-circle
+            .view_item-info 
+                .item-name
+                    .title 
+                        i.fas.fa-album.icon
+                        span Name: 
+                    .value On My Way
+                .item-author
+                    .title 
+                        i.fas.fa-at.icon
+                        span Author: 
+                    .value Alan Walker, Sabrina,..
+                .item-category 
+                    .title 
+                        i.far.fa-betamax.icon
+                        span Category: 
+                    .value US-UK
+                .item-duration
+                    .title 
+                        i.fad.fa-hourglass-start.icon
+                        span Duration: 
+                    .value 03:36
+                .item-path 
+                    .title 
+                        i.fas.fa-location-arrow.icon
+                        span Path: 
+                    .value ./song-mp3/us-uk/song-2.mp3
+                .item-t-create 
+                    .title 
+                        i.fad.fa-calendar-plus.icon
+                        span Time create: 
+                    .value 11/11/2011
+                .item-t-lastUpdate
+                    .title 
+                        i.far.fa-calendar-edit.icon
+                        span Time last update
+                    .value 23/02/2022 11:34
+        .admin_action-content.admin_edit-container
+            .edit_item-img.bg-img(style="background-image: url('./img/song-img/us-uk/on-my-way.jpg');")
+                .control.bg-overlay  
+                    .play.active 
+                        i.fad.fa-play-circle
+                    .pause
+                        i.fas.fa-pause-circle
+            .edit_item-info 
+                .item-name
+                    label(for="edit_name").title 
+                        i.fas.fa-album.icon
+                        span Name: 
+                    input(type="text" name="edit_name" value="On My Way")#edit_name.value
+                .item-author
+                    label(for="edit_author").title 
+                        i.fas.fa-at.icon
+                        span Author: 
+                    input(type="text" name="edit_author" value="Alan Walker, Sabrina,..")#edit_author.value
+                .item-category 
+                    label(for="edit_category").title 
+                        i.far.fa-betamax.icon
+                        span Category: 
+                    select(name="edit_category")#edit_category.value
+                        option(value='vpop') Vpop
+                        option(value='us-uk') US-UK
+                        option(value='lofi') Lofi
+                .item-duration
+                    label(for="edit_duration").title 
+                        i.fad.fa-hourglass-start.icon
+                        span Duration: 
+                    input(type="text" name="edit_duration" value="03:20" disabled)#edit_duration.value 
+                .item-image
+                    label(for="edit_image").title 
+                        i.fas.fa-image.icon
+                        span Image: 
+                        label(for="edit_image") Click to edit image
+                        input(type="file" name="edit_image" hidden)#edit_image
+                    .value ./song-mp3/us-uk/song-2.mp3
+                .item-path 
+                    label(for="edit_path").title 
+                        i.fas.fa-location-arrow.icon
+                        span Path: 
+                        label(for="edit_path") Click to edit path
+                        input(type="file" name="edit_path" hidden)#edit_path
+                    .value ./song-mp3/us-uk/song-2.mp3
+                .item-t-create 
+                    label(for="edit_t-create").title 
+                        i.fad.fa-calendar-plus.icon
+                        span Time create: 
+                    input(type="date" name="edit_t-create" value="2011-11-11" )#edit_t-create.value 
+                .item-t-lastUpdate
+                    label(for="edit_t-lastUpdate").title 
+                        i.far.fa-calendar-edit.icon
+                        span Time last update
+                    input(type="datetime-local" name="edit_t-lastUpdate" value="2022-02-23T11:34" )#edit_t-lastUpdate.value 
+                .item-summit 
+                    label(for="edit_summit")
+                        i.fas.fa-check-circle.icon-summit
+                    input(type="summit" hidden)#edit_summit
+        .admin_action-content.admin_create-container
+            .create_item-img.bg-img(style="background-image: url('./img/core-img/img-default.jpg');")
+                .control.bg-overlay  
+                    .play.active 
+                        i.fad.fa-play-circle
+                    .pause
+                        i.fas.fa-pause-circle
+            .create_item-info 
+                .item-name
+                    label(for="create_name").title 
+                        i.fas.fa-album.icon
+                        span Name: 
+                    input(type="text" name="create_name" value="")#create_name.value
+                .item-author
+                    label(for="create_author").title 
+                        i.fas.fa-at.icon
+                        span Author: 
+                    input(type="text" name="create_author" value="")#create_author.value
+                .item-category 
+                    label(for="create_category").title 
+                        i.far.fa-betamax.icon
+                        span Category: 
+                    select(name="create_category")#create_category.value
+                        option(value='vpop') Vpop
+                        option(value='us-uk') US-UK
+                        option(value='lofi') Lofi
+                .item-duration
+                    label(for="create_duration").title 
+                        i.fad.fa-hourglass-start.icon
+                        span Duration: 
+                    input(type="text" name="create_duration" value="" disabled)#create_duration.value 
+                .item-image
+                    label(for="create_image").title 
+                        i.fas.fa-image.icon
+                        span Image: 
+                        label(for="create_image") Click to choose image
+                        input(type="file" name="create_image" hidden)#create_image
+                    .value 
+                .item-path 
+                    label(for="create_path").title 
+                        i.fas.fa-location-arrow.icon
+                        span Path: 
+                        label(for="create_path") Click to choose path
+                        input(type="file" name="create_path" hidden)#create_path
+                    .value 
+                .item-t-create 
+                    label(for="create_t-create").title 
+                        i.fad.fa-calendar-plus.icon
+                        span Time create: 
+                    input(type="date" name="create_t-create" value="" )#create_t-create.value 
+                .item-t-lastUpdate
+                    label(for="create_t-lastUpdate").title 
+                        i.far.fa-calendar-create.icon
+                        span Time last update
+                    input(type="datetime-local" name="create_t-lastUpdate" value="" )#create_t-lastUpdate.value 
+                .item-summit 
+                    label(for="create_summit")
+                        i.fas.fa-plus-circle.icon-summit
+                    input(type="summit" hidden)#create_summit
+        audio#audio(src="")

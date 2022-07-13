@@ -1,0 +1,37 @@
+section#login.bg-overlay
+    .login__container
+        .login__nav
+            h1.singin__name.active Sign in 
+            span /
+            h1.singup__name Sign up 
+        .login__content
+            .singin.active
+                form(action='#')
+                    //- h1 Sign in
+                    .social-container
+                        a.social(href='#')
+                            i.fab.fa-facebook-f
+                        a.social(href='#')
+                            i.fab.fa-google-plus-g
+                        a.social(href='#')
+                            i.fab.fa-linkedin-in
+                    span or use your account
+                    input(type='email' placeholder='Email')
+                    input(type='password' placeholder='Password')
+                    a.forgot(href='#') Forgot your password?
+                    button.btn Sign In
+            .singup
+                form(action='#')
+                    //- h1 Create Account
+                    .social-container
+                        a.social(href='#')
+                            i.fab.fa-facebook-f
+                        a.social(href='#')
+                            i.fab.fa-google-plus-g
+                        a.social(href='#')
+                            i.fab.fa-linkedin-in
+                    span or use your email for registration
+                    input(type='text' placeholder='Name')
+                    input(type='email' placeholder='Email')
+                    input(type='password' placeholder='Password')
+                    button.btn Sign Up

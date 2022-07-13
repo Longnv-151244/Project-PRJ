@@ -1,0 +1,80 @@
+section#main    
+    .main__bg.bg-img(style="background-image: url('./img/bg-gif/gif-2.gif');")
+        .main__settingBg 
+            .settingBg__icon 
+                i.fas.fa-sliders-h
+            .settingBg__container
+                .settingBg__content
+                    h2.settingBg__heading Setup BackGround
+                    .settingBg__list-item
+        .main__player
+            .player__song
+                .song-img.bg-img
+                .song-info
+                    .song-name 
+                    .song-author 
+            .player__control
+                .control
+                    .repeat
+                        i.fas.fa-repeat
+                    .prev 
+                        i.fas.fa-fast-backward
+                    .play
+                        i.fas.fa-play-circle
+                    .pause.active
+                        i.fas.fa-pause-circle
+                    .next 
+                        i.fas.fa-fast-forward
+                    .random
+                        i.fas.fa-random
+                .duration 
+                    .currenTime 00:00
+                    .sidebarTime--bg
+                        .sidebarTime--current
+                    .durationTime
+            .player__option
+                .volume
+                    .volume__icon
+                        i.mute.fas.fa-volume-slash
+                        i.volume--low.fas.fa-volume.active
+                        i.volume--hight.fas.fa-volume-up
+                    .volume__silebar--bg
+                        .volume__silebar--current
+                .option__content
+                    .like.option
+                        i.far.fa-heart
+                        i.fas.fa-heart
+                    .download.option
+                        i.fas.fa-download
+        .main__playlist
+            .playlist__icon 
+                .open.active
+                    i.fad.fa-angle-double-left
+                .close
+                    i.fad.fa-angle-double-right
+            .playlist__content
+                .playlist_grouptab
+                    span.watting_list__name.active Danh sách phát
+                    span.love_list__name Danh sách Playlist
+                .watting_list.tab__container-list.active
+                    .play-list.scroll-overflow
+                .love_list.tab__container-list
+                    .login.active
+                        .login__heading Đăng nhập để khám phá những playlist dành riêng cho chính bạn.
+                        .login__content.active
+                            img(src="./img/core-img/google_logo.png", alt="")
+                            span Đăng nhập
+                    .play-list.scroll-overflow
+                       
+                
+
+
+                        
+
+
+
+
+
+                
+            
+

@@ -1,0 +1,64 @@
+section#user.bg-overlay
+    .user-container
+        .user-content
+            .user__base-info 
+                .user_avatar.bg-img(style="background-image: url('./img/core-img/avatar-default-1.jpg');")
+                .user__fullname 
+                    .first_name 
+                        .title First name: 
+                        .value 
+                            span.active Long
+                            input(type="text", name="first-name" value="Long" placeholder="First-name ...").edit_value
+                        i.fas.fa-edit.icon-setting.active 
+                        i.fal.fa-window-close.icon-setting-close
+                    .last_name 
+                        .title Last name: 
+                        .value 
+                            span.active Nguyễn
+                            input(type="text", name="last-name" value="Nguyễn" placeholder="First-name ...").edit_value
+                        i.fas.fa-edit.icon-setting.active 
+                        i.fal.fa-window-close.icon-setting-close
+            .user__more-info
+                .user_username
+                    .title 
+                        i.fas.fa-user.icon
+                        span Username: 
+                        i.fas.fa-edit.icon-setting.active
+                        i.fal.fa-window-close.icon-setting-close
+                    .value 
+                        .edit_value
+                        span.active longnvhe151244
+                .user_password
+                    .title 
+                        i.fas.fa-key.icon
+                        span Password: 
+                        i.fas.fa-edit.icon-setting.active
+                        i.fal.fa-window-close.icon-setting-close
+                    .value 
+                        span.active ********
+                        .edit_password.edit_value
+                            input(type="password", name="old-password" placeholder="Mật khẩu cũ")
+                            input(type="password", name="new-password" placeholder="Mật khẩu mới")
+                            input(type="password", name="verify-password" placeholder="Nhập lại mật khẩu mới")
+                .user_email 
+                    .title 
+                        i.fas.fa-envelope-open.icon
+                        span Email: 
+                        i.fas.fa-edit.icon-setting.active
+                        i.fal.fa-window-close.icon-setting-close
+                    .value 
+                        span.active longnvhe151244@fpt.edu.vn
+                        input(type="email", name="email" value="longnvhe151244@fpt.edu.vn" placeholder="Email ....").edit_value
+                .user_time-create
+                    .title 
+                        i.fas.fa-calendar-star.icon
+                        span Time create: 
+                        i.fas.fa-edit.icon-setting.active
+                        i.fal.fa-window-close.icon-setting-close
+                    .value 
+                        .edit_value
+                        span.active 15/02/2001 13:20:16
+            .user__icon-summit 
+                    label(for="user__edit_summit")
+                        i.fas.fa-check-circle.edit-summit
+                    input(type="summit" hidden)#user__edit_summit            

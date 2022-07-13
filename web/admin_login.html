@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" type="text/css">
+    </head>
+    <body>
+        <div class="section" id="admin__login"> 
+            <div class="login__container"> 
+                <div class="login__main"> 
+                    <div class="login__content">
+                        <div class="login__header">Login to LouStic</div>
+                        <div class="login__subtittle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        <form action="./admin" method="POST">
+                            <div class="login__form">
+                                <div class="form_username">
+                                    <label class="title" for="login_username"> <span>Username: </span></label>
+                                    <input class="value" type="text" name="username" placeholder="Username ..." id="login_username">
+                                </div>
+                                <div class="form_username">
+                                    <label class="title" for="login_password"> <span>Password: </span></label>
+                                    <input class="value" type="password" name="password" placeholder="Password ..." id="login_password">
+                                </div>
+                                <div class="form_checkRemember">
+                                    <input type="checkbox" name="remember" value="On" hidden id="login_checkRemember">
+                                    <label class="title" for="login_checkRemember"> <i class="fal fa-check checkbox-mark"></i><span>Remember me</span></label>
+                                </div>
+                                <div class="form_sumbit"> 
+                                    <input class="btn btn-submit" type="submit" value="Login in">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="login__bg-img bg-img" style="background-image: url('./img/core-img/login-bg-3.jpg')"></div>
+            </div>
+        </div>
+        <section id="toast"></section>
+    </body>
+</html>
